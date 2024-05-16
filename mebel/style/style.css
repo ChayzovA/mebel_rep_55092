@@ -1,0 +1,289 @@
+header{
+   background-color: rgb(172, 172, 172);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0px;
+}
+
+.logo{
+    width: 200px;
+    height: 60px;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #cacaca;
+    gap: 3px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav>a{
+    padding: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav2{
+    padding: 0 20px 0 20px;
+}
+
+.nav3{
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 15px;
+}
+
+.bnav{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.table,.buscket, .favorite{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 768px;
+    margin:auto;
+}
+
+.product, .buscket-product, .favorite-product{
+    border: solid 0.5px rgb(199, 199, 199);
+    padding: 5px;
+    width: 200px;
+    height: 220px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+
+div>img{
+    width: 200px;
+    height: 180px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;/*где отступы?*/
+}
+
+button{
+    border: none;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.baction {
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.baction:active {
+    background-color: white;
+    color: black;
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}
+
+.subscr {
+    display: flex;
+    justify-content: center;
+} 
+
+footer{
+    background-color: rgb(172, 172, 172);
+    margin-top: 20%;
+}
+
+.hamburger-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    height: 3px;
+    width: 30px;
+    background-color: rgb(30, 30, 30);
+    margin: 5px 0;
+    z-index: 1;
+}
+input{
+    margin-right: 5px;
+}
+
+.baction i.fa-star-o{
+    color: black;
+}
+
+.baction i.fa-star{
+    color:yellow;
+}
+
+.img-buscket, .img-favorite{
+    width: 20px;
+    height: 20px;
+}
+
+.bbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.button-link{
+    padding: 10px 20px;
+    transition: 0.5s ease;
+    background-color: #cacaca;
+    border: none;
+}
+
+.button-link:hover{
+    background-color: black;
+    color: white;
+}
+
+.reg-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin: 5px 5px;
+    border: solid 0.3px #8f8f8f;
+}
+
+.head-auth{
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+input.button-link{
+    margin-top: 20px;
+}
+
+input:invalid:not(:placeholder-shown) {
+    box-shadow: 0 0 10px #cc0c0c;
+  }
+input:valid:not(:placeholder-shown) {
+    box-shadow: 0 0 10px #10b713;
+  }
+
+  .add-product{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+@media only screen and (max-width: 768px){
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    nav.active{
+        display: flex;
+    }
+
+    .logo{
+        scale: 120%;
+    }
+
+    .head-auth{
+        font-size: 12px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    
+    .table, .buscket, .favorite{
+        width: 100%;
+        margin-left: 15px;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .baction{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .nav2>h2{
+        font-size: 30px;
+    }
+    .bnav{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .product{
+        width: 250px;
+        height: 250px;
+        font-size: 20px;
+    }
+    .product>img{
+        width: 230px;
+        height: 200px;
+    }
+
+    .footer{
+        font-size: 25px;
+    }
+    .footer>h3{
+        margin: 5px 0 5px 0;
+    }
+    .footer>p{
+        margin-top: 5px;
+        font-size: 17px;
+    }
+    .footer>p{
+        text-align: center;
+    }
+    .subscr{
+        height: 40px;
+    }
+    input{
+        margin-right: 5px;
+    }
+}
